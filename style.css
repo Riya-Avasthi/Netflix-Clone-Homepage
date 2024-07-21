@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Butcherman&family=Creepster&family=Dancing+Script:wght@500&family=Martel+Sans:wght@600&family=Nosifer&family=Pacifico&family=Permanent+Marker&family=Pixelify+Sans&family=Poppins:wght@300&family=Sedgwick+Ave+Display&family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Archivo+Black&family=Butcherman&family=Creepster&family=Dancing+Script:wght@500&family=Martel+Sans:wght@600&family=Nosifer&family=Pacifico&family=Permanent+Marker&family=Pixelify+Sans&family=Poppins:wght@300&family=Sedgwick+Ave+Display&family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: black;
+}
+.main{
+    background-image: url(images/bg.jpg);
+    background-position: center center;
+    background-size: max(1200px,100vw);
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+}
+.main .box{
+    height: 100vh;
+    width: 100%;
+    opacity: 0.55;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+nav{
+    display: flex;
+    max-width: 80vw;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+nav img{
+    color: red;
+    width: 160px;
+    padding: 15px 0;
+    position: relative;
+    z-index: 10;
+}
+nav button{
+    position: relative;
+    z-index: 10;
+}
+.hero{
+    font-family: 'Archivo Black' , 'san-serif';
+    height: calc(100% - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    gap: 24px;
+    padding:0 30px;
+}
+
+.hero> :first-child{
+    font-size: 48px;
+    font-weight: bolder;
+    text-align: center;
+}
+.hero> :nth-child(2){
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+
+}
+.hero> :nth-child(3){  /*hero> indicates immediate nth child*/
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+
+}
+.separation{
+    height: 5px;
+    background-color: grey;
+}
+.btn{
+    padding: 8px 16px;
+    margin: 4px;
+    background-color: rgba(5, 5, 5, 0.652);
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 400;
+    border: 2px solid rgba(110, 108, 108, 0.8);
+}
+
+.btn-red{
+    background-color: red;
+    color: white;
+    padding: 15px 25px;
+    font-size: 20px ;
+    font-weight: 600;
+    border-radius: 4px ;
+}
+
+.btn-red-sm{
+    background-color: red;
+    color: white;
+
+}
+
+.hero-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.main input{
+    background-color: rgba(23,23,23,0.8);
+    color: white;
+    border:2px solid rgba(110, 108, 108, 0.8);
+    padding: 15px 45px;
+    font-size: 20px ;
+    border-radius: 4px ;
+}
+
+.first{
+    display: flex;
+    justify-content: center;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.secImg{
+    position: relative;
+}
+
+.secImg img{
+    
+    width: 555px;
+    top: 5px;
+    position: relative;
+    z-index: 100;
+}
+
+.secImg video{
+    position: absolute;
+    top: 80px;
+    right: 0;
+}
+
+section.first > div{
+    display: flex;
+    flex-direction: column;
+    padding: 34px 0;
+}
+
+section.first > div :nth-child(1){
+    font-size: 48px;
+    font-weight: bolder;
+    font-family: 'Archivo Black' , 'san-serif';
+}
+
+section.first > div :nth-child(2){
+    font-size: 24px;
+    font-family: 'san-serif';
+}
+
+
+.faq{
+    background-color: black;
+    color: white;
+    padding: 35px;
+}
+
+.faq h2{
+    text-align: center;
+    font-size: 48px;
+    font-family: 'Archivo Black' , 'san-serif';
+}
+
+/* .faq div :hover{
+    background-color:rgba(77, 76, 76, 0.807);
+} */
+.faqbox :hover{
+    background-color: grey;
+    color: white;
+}
+
+.faqbox span{
+    font-family: 'Archivo Black' , 'san-serif';
+}
+
+.faqbox svg{
+    filter: invert(1);
+}
+.faqbox{
+    font-size: 30px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(51, 50, 50, 0.841);
+    max-width: 75vw;
+    padding: 22px;
+    margin:  20px auto;
+    cursor: pointer;
+    
+}
+
+footer{
+    color: rgba(171, 167, 167, 0.819);
+    margin: auto;
+    max-width: 60vw;
+    padding: 25px;
+}
+footer .question{
+    padding: 34px 0;
+}
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white
+}
+
+@media screen and (max-width: 1300px) {
+    nav{
+        max-width: 90vw;
+    }
+    .first{
+        flex-wrap: wrap;
+    }
+    .secImg img{
+        width: 305px;
+    }
+
+    .secImg video{
+        width: 305px;
+    }
+    .hero> :first-child{
+        font-size: 32px;
+    }
+
+    .hero> :nth-child(2){
+        font-size: 18px;
+    }
+
+    .hero> :nth-child(3){
+        font-size: 18px;
+    }
+
+    .hero-buttons{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .faq h2{
+        text-align: center;
+        font-size: 32px;
+        font-family: 'Archivo Black' , 'san-serif';
+    }
+
+    footer{
+        max-width: 90vw;
+    }
+
+    .footer-item{
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:1300px){
+    .footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+}
+
+
+.footer a{
+    font-size: 15px;
+    color: rgba(171, 167, 167, 0.819);
+    padding: 4px;
+}
+
+.footer-item{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.ft span{
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family:'Poppins' , 'san-serif' ;
+    font-size: 900;
+    color: white;
+}
+.ft input{
+    background-color: rgba(23,23,23,0.8);
+    color: white;
+    border:2px solid rgba(110, 108, 108, 0.8);
+    padding: 15px 45px;
+    font-size: 20px ;
+    border-radius: 4px ;
+}
+.ft .hero-buttons{
+    padding: 10px;
+    bottom: 80px;
+}
